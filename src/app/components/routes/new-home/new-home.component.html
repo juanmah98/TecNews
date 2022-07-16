@@ -1,0 +1,144 @@
+<body class="pt-5 mt-5">
+    
+    <div class="container">
+        <div class="row" [ngClass]="style == true ? 'isTrue' : 'isFalse'">
+            <div class="col-md-8" >
+                <div class="text-center">
+                    
+                    <h1>{{date.titel}}</h1>
+                    <h4>{{date.subtitel}}</h4>
+                </div>
+                <img src="{{date.img}}"  class="w-100" alt="">
+                <h5>{{date.autor}}</h5>
+            </div>
+
+            <div class="col-md-4 " >
+                <ul class="list" *ngFor="let arreDoble of arreDoble">
+                    <li>
+                        <div class="text-center" >
+                            <h4>{{arreDoble.titel}}</h4>
+                            <p>{{arreDoble.subtitel}}</p>
+                        </div>
+                        <img src="{{arreDoble.url}}" class=" w-100"   alt="">
+                    </li>                   
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div class="col text-center">
+                <button class="btn btn-primary m-2"(click)="setStyle()">SETEAR</button>
+                <button class="btn btn-primary m-2" (click)="unSetStyle()">UNSETEAR</button>
+            </div>
+        </div>
+
+       <!--  <table>
+            <tr *ngFor="let item of arreglo; let indice=index; let impar = odd;let par = even;" [ngClass]="{azul:par,verde:impar}">                               
+                    <td>
+                        {{indice+2}}
+                    </td>
+                    <td>
+                        {{item}}
+                    </td>              
+            </tr>
+        </table> -->
+
+        <div class="col mx-4 my-3">
+            <div class="w-100 linea"> </div>
+        </div>
+
+        <div class="row pb-5">
+            <div class="col-md-4">
+                <div class="text-center mt-3">
+                    
+                    <h4>SECUNADRIO</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit.</p>
+                </div>
+                <img class=" w-100" src="https://www.rosario3.com/__export/1656463136233/sites/rosario3/img/2022/06/28/whatsapp_image_2022-06-28_at_7_59_59_pm.jpeg_1756841869.jpeg"  alt="">
+             </div>
+            <div class="col-md-4">
+                
+                    <div class="text-center mt-3">
+                        
+                        <h4>SECUNADRIO</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit.</p>
+                    </div>
+                    <img class=" w-100" src="https://www.rosario3.com/__export/1656002569050/sites/rosario3/img/2022/06/23/crimen_cabin_9_3.jpeg_1756841869.jpeg"  alt="">
+                
+            </div>
+            <div class="col-md-4">
+                
+                        <div class="text-center mt-3">
+                            
+                            <h4>SECUNADRIO</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit.</p>
+                        </div>
+                        <img class=" w-100" src="https://www.rosario3.com/__export/1656429507199/sites/rosario3/img/2022/06/28/aic11.png_1756841869.png"  alt="">
+                   
+            </div>
+        </div>
+
+        <div class="row mt-5 p-3 mb-3 fondo">
+           
+                <div class="col-md-5 m-1">
+                    <img class=" w-100 shadow" src="https://www.rosario3.com/export/sites/rosario3/img/2022/06/27/e1f0d29af2fe617dfa950ed0b0e568fe.jpg_347421144.jpg"  alt="">
+                </div>
+
+                <div class="col-xl-3 m-1">
+                    <ul class="list">
+                        <li class="m-1">
+                            <img class=" w-100 shadow" src="https://www.rosario3.com/__export/1656410433812/sites/rosario3/img/2022/06/28/hombre-se-jubilo-tras-27-anos-sin-faltar-un-solo-dia-y-la-empresa-le-regalo-dos-paquetes-de-dulces.jpg_1756841869.jpg"  alt="">
+                        </li>
+                        <li class="m-1 pt-3">
+                            <img class=" w-100 shadow" src="https://www.rosario3.com/__export/1656370821247/sites/rosario3/img/2022/06/27/tribunal_federal_jpg_1756841869.jpg_1756841869.jpg"  alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-3 m-1">
+                    <ul class="list">
+                        <li class="m-1 ">
+                            <img class=" w-100 shadow" src="https://www.rosario3.com/__export/1656426549135/sites/rosario3/img/2022/06/28/seghezzo1_crop1656426548664.jpg_1756841869.jpg"  alt="">
+                        </li>
+                        <li class="m-1 pt-3">
+                            <img class=" w-100 shadow" src="https://www.rosario3.com/__export/1656365710781/sites/rosario3/img/2022/06/27/exliza7wqaixkzs.jpg_1756841869.jpg"  alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row pb-5 mt-5">
+                <div class="col-md-4">
+                    <div class="text-center mt-3">
+                        
+                        <h4>SECUNADRIO</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit.</p>
+                    </div>
+                    <img class=" w-100" src="https://www.rosario3.com/__export/1656463136233/sites/rosario3/img/2022/06/28/whatsapp_image_2022-06-28_at_7_59_59_pm.jpeg_1756841869.jpeg"  alt="">
+                 </div>
+                <div class="col-md-4">
+                    
+                        <div class="text-center mt-3">
+                            
+                            <h4>SECUNADRIO</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit.</p>
+                        </div>
+                        <img class=" w-100" src="https://www.rosario3.com/__export/1656002569050/sites/rosario3/img/2022/06/23/crimen_cabin_9_3.jpeg_1756841869.jpeg"  alt="">
+                    
+                </div>
+                <div class="col-md-4">
+                    
+                            <div class="text-center mt-3">
+                                
+                                <h4>SECUNADRIO</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit.</p>
+                            </div>
+                            <img class=" w-100" src="https://www.rosario3.com/__export/1656429507199/sites/rosario3/img/2022/06/28/aic11.png_1756841869.png"  alt="">
+                       
+                </div>
+            </div>
+        </div>
+
+        
+   
+</body>
