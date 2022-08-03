@@ -1,8 +1,10 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ArticulosModule } from './components/articulos/articulos.module';
 import { LayouteModule } from './components/layoute/layoute.module';
 import { RoutesModule } from './components/routes/routes.module';
 
@@ -14,7 +16,10 @@ import { RoutesModule } from './components/routes/routes.module';
     BrowserModule,
     AppRoutingModule,
     LayouteModule,
-    RoutesModule
+    RoutesModule,
+    ArticulosModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

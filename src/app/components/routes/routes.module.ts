@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { NoticiaComponent } from './noticia/noticia.component';
 import { NewHomeComponent } from './new-home/new-home.component';
+import { SubHomeComponent } from './sub-home/sub-home.component';
 
 
 
@@ -10,7 +11,8 @@ import { NewHomeComponent } from './new-home/new-home.component';
   declarations: [
     HomeComponent,
     NoticiaComponent,
-    NewHomeComponent
+    NewHomeComponent,
+    SubHomeComponent
   ],
   imports: [
     CommonModule
